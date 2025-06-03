@@ -28,15 +28,10 @@ body {
     transform: translateY(-5px);
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #FF2B06;
-}
 
 .register-btn {
     transition: all 0.3s ease;
-    background: #E62B1E;
+    background: red;
 }
 
 .register-btn:hover {

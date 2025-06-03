@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDx Leadcity University - Open Mic Event</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#FF2B06', secondary: '#1a1a1a' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white text-black sticky top-0 z-50 h-20">
+        <div class="container mx-auto sm:px-24 px-4 h-full flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="img/logo.png" alt="TEDxLeadCityUniversity" class="w-32 md:w-44 h-auto" />
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#details" class="hover:text-primary transition-colors">Event Details</a>
+                <a href="#register" class="hover:text-primary transition-colors">Register</a>
+                <a href="#faq" class="hover:text-primary transition-colors">FAQs</a>
+            </nav>
+            <button class="md:hidden w-8 h-8 flex items-center justify-center" id="menuToggle" aria-label="Toggle menu">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        <div class="mobile-menu hidden bg-white text-center absolute w-full py-8 px-4 md:hidden shadow-lg z-50"
+            id="mobileMenu">
+            <div class="flex flex-col space-y-6">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#details" class="hover:text-primary transition-colors">Event Details</a>
+                <a href="#register" class="hover:text-primary transition-colors">Register</a>
+                <a href="#faq" class="hover:text-primary transition-colors">FAQs</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section min-h-[80vh] flex items-center text-white">
+        <div class="container mx-auto sm:px-24 px-8 py-24">
+            <div class="max-w-3xl">
+                <h1 class="tedx-font text-5xl md:text-7xl mb-4">Open Mic <span class="text-primary">Event</span></h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">Share your ideas worth spreading at Leadcity University's
+                    most anticipated event of the year.</p>
+
+                <div class="flex flex-nowrap sm:gap-6 gap-3 mb-12 ">
+                    <div
+                        class="countdown-item rounded-lg sm:px-6 px-2 sm:py-2 py-2 flex flex-col justify-center text-center">
+                        <div class="sm:text-4xl text-2xl font-bold" id="days">25</div>
+                        <div class="text-sm uppercase tracking-wider opacity-80">Days</div>
+                    </div>
+                    <div
+                        class="countdown-item rounded-lg sm:px-6 px-2 sm:py-2 flex flex-col justify-center text-center">
+                        <div class="sm:text-4xl text-2xl font-bold" id="hours">18</div>
+                        <div class="text-sm uppercase tracking-wider opacity-80">Hours</div>
+                    </div>
+                    <div
+                        class="countdown-item rounded-lg sm:px-6 px-2 sm:py-2 flex flex-col justify-center text-center">
+                        <div class="sm:text-4xl text-2xl font-bold" id="minutes">45</div>
+                        <div class="text-sm uppercase tracking-wider opacity-80">Minutes</div>
+                    </div>
+                    <div
+                        class="countdown-item rounded-lg sm:px-6 px-2 sm:py-2 flex flex-col justify-center text-center">
+                        <div class="sm:text-4xl text-2xl font-bold" id="seconds">32</div>
+                        <div class="text-sm uppercase tracking-wider opacity-80">Seconds</div>
+                    </div>
+                </div>
+
+                <a href="https://forms.gle/RVcKsyoYVNTv8Y6s9" target="_blank"
+                    class="register-btn inline-block bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold whitespace-nowrap">Register
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto sm:px-24 px-8 overflow-x-hidden">
+            <div class="flex flex-col md:flex-row gap-24 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="tedx-font text-4xl mb-6">About the <span class="text-primary">Open Mic</span></h2>
+                    <p class="text-lg mb-6">TEDx is coming to Lead City University once again!
+                        But first, we're handing the mic to five people who want to earn their place on that stage.
+                        They've been shortlisted from our list of applicants, Now they have one shot to prove their idea
+                        is TEDx-worthy
+                        This is our first-ever Open Mic Event, a space where Lead City community members can share bold
+                        ideas, personal stories, and creative performances in the TEDx format.
+                    </p>
+                    <p class="text-lg mb-6">But this night isn't just about performance it's a proving ground.
+                        A preview of voices that could shape the conversations we'll be having next in our community
+                        Come listen. Come question. Be the Judge</p>
+                    <div class="grid sm:grid-cols-3 grid-cols-2 items-center gap-4 text-sm text-gray-600">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-calendar-line"></i>
+                            </div>
+                            <span>June 25, 2025</span>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>4:00 PM - 8:00 PM</span>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span>Tasty Vine, Leadcity University</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/img/img3.jpg" alt="TEDx Open Mic Event"
+                        class="rounded-lg shadow-lg w-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="py-20 bg-gray-50">
+        <div class="container mx-auto sm:px-24 px-8">
+            <h2 class="tedx-font text-4xl text-center mb-16">Event <span class="text-primary">Details</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="event-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-map-pin-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Venue</h3>
+                    <p class="mb-4">TastyVine Cousine</p>
+                    <p class="mb-4">Enterprise, Leadcity University</p>
+                    <div class="h-48 rounded-lg overflow-hidden bg-gray-200">
+                        <div
+                            style="background-image: url('img/tastyvine.jpg'); background-size: cover; background-position: center; width: 100%; height: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-calendar-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Schedule</h3>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">9:30 AM</span>
+                            <span>Registration/sign up.</span>
+                        </li>
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">10:00 AM</span>
+                            <span>Opening prayer.</span>
+                        </li>
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">10:10 AM</span>
+                            <span>Welcome speech.</span>
+                        </li>
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">10:20 AM</span>
+                            <span>Performance!</span>
+                        </li>
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">10:30 AM</span>
+                            <span>Presentation </span>
+                        </li>
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">11:45 AM</span>
+                            <span>Announcement of the student speaker.</span>
+                        </li>
+
+                        <li class="flex">
+                            <span class="text-primary font-semibold w-24">12:00 AM</span>
+                            <span>Closing Prayer</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="event-card bg-white p-8 rounded-lg shadow-md w-2/2">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-information-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">What to Expect</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>Inspiring talks from the prospective student speakers</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>Matchmaking (it's not about love).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>One free meal from tasty vine as a prize (3_5k worth).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>Short Drama, Karaoke, Dance e.t.c</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>Trivia.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="register" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="tedx-font text-4xl mb-6">Register as an <span class="text-primary">Attendee</span></h2>
+                <p class="text-lg mb-12">Join us for an inspiring morning of ideas worth spreading. Register Now</p>
+
+
+                <div class="pt-4">
+                    <a href="https://forms.gle/RVcKsyoYVNTv8Y6s9" target="_blank">
+                        <button type="submit"
+                            class="register-btn w-full bg-primary text-white px-6 py-4 rounded-button text-lg font-semibold whitespace-nowrap">Register
+                            Now</button>
+                    </a>
+                </div>
+
+
+                </form>
+
+                <div class="mt-12 p-6 bg-gray-800 rounded-lg">
+                    <div class="flex items-center justify-center gap-4 mb-4">
+                        <div class="w-6 h-6 flex items-center justify-center text-primary">
+                            <i class="ri-information-line"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Registration Information</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>Admission is free but registration is required</span>
+                        </li>
+
+
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span>Please arrive 30 minutes before the event for check-in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="tedx-font text-4xl text-center mb-16">Frequently Asked <span
+                    class="text-primary">Questions</span></h2>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <div class="faq-item border-b border-gray-200 pb-6">
+                        <button class="faq-question w-full flex justify-between items-center text-left">
+                            <h3 class="text-xl font-semibold">What is an Open Mic Event?</h3>
+                            <div class="w-6 h-6 flex items-center justify-center faq-icon">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden mt-4">
+                            <p>Our TEDx Open Mic Event is a platform where Students of our Leadcity University can share
+                                their
+                                ideas, stories, and performances in the iconic TEDx format. Speakers will have time
+                                to present their thoughts on various topics related to technology, entertainment,
+                                design, and beyond.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border-b border-gray-200 pb-6">
+                        <button class="faq-question w-full flex justify-between items-center text-left">
+                            <h3 class="text-xl font-semibold">Is there a cost to attend?</h3>
+                            <div class="w-6 h-6 flex items-center justify-center faq-icon">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden mt-4">
+                            <p>No, admission is free for all attendees. However, registration is required. We encourage
+                                you to register early to secure your spot.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border-b border-gray-200 pb-6">
+                        <button class="faq-question w-full flex justify-between items-center text-left">
+                            <h3 class="text-xl font-semibold">Can I participate as a speaker?</h3>
+                            <div class="w-6 h-6 flex items-center justify-center faq-icon">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden mt-4">
+                            <p>You cannot participate as a speaker because this is our selection process for those that
+                                applied to be speakers</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border-b border-gray-200 pb-6">
+                        <button class="faq-question w-full flex justify-between items-center text-left">
+                            <h3 class="text-xl font-semibold">Will the event be recorded?</h3>
+                            <div class="w-6 h-6 flex items-center justify-center faq-icon">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden mt-4">
+                            <p>Yes, all presentations will be professionally recorded. By attending the event, you
+                                consent to being filmed and photographed. Selected talks may be featured on our TEDx
+                                YouTube channel after the event.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border-b border-gray-200 pb-6">
+                        <button class="faq-question w-full flex justify-between items-center text-left">
+                            <h3 class="text-xl font-semibold">What should I bring to the event?</h3>
+                            <div class="w-6 h-6 flex items-center justify-center faq-icon">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden mt-4">
+                            <p>You are encouraged to bring your friends and writing materials to Jot down inspiring
+                                talks from students speakers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item pb-6">
+                        <button class="faq-question w-full flex justify-between items-center text-left">
+                            <h3 class="text-xl font-semibold">How can I contact the organizers?</h3>
+                            <div class="w-6 h-6 flex items-center justify-center faq-icon">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden mt-4">
+                            <p>For any questions or concerns, please email us at <a href="mailto:tedx@leadcity.edu.ng"
+                                    class="text-primary hover:underline">TEDxLeadCityUniversity@gmail.com</a> or call
+                                our event
+                                coordinator at +234 707 616 3685.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto md:px-24 px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <img src="img/Tedx white logo.png" alt="TEDxLeadCityUniversity" class="w-32 md:w-44 h-auto" />
+                    </div>
+                    <p class="text-gray-400">Ideas worth spreading from Leadcity University to the world.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="#details" class="text-gray-400 hover:text-primary transition-colors">Event
+                                Details</a></li>
+                        <li><a href="#register" class="text-gray-400 hover:text-primary transition-colors">Register</a>
+                        </li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-primary transition-colors">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="ri-mail-line mt-1"></i>
+                            <span class="text-gray-400 break-all">TEDxLeadCityUniversity@gmail.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="ri-phone-line mt-1"></i>
+                            <span class="text-gray-400">+234 7076163685</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="ri-map-pin-line mt-1"></i>
+                            <span class="text-gray-400">Leadcity University, Ibadan, Nigeria</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms &
+                                Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+                <p>This independent TEDx event is operated under license from TED.</p>
+                <p class="mt-2">© 2025 TEDxLeadcityUniversity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

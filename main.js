@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Countdown Timer
-    const countDownDate = new Date("June 12, 2025 10:00:00").getTime();
+    const countDownDate = new Date("June 12, 2025 16:30:00").getTime();
     const daysEl = document.getElementById("days");
     const hoursEl = document.getElementById("hours");
     const minutesEl = document.getElementById("minutes");
